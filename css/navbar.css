@@ -1,0 +1,217 @@
+/* ==============================
+   NAVBAR
+================================= */
+
+header {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.85);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+    z-index: 1000;
+}
+
+/* Main navbar container */
+
+
+.navbar {
+
+    width: 90%;
+    max-width: 1280px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 0;
+}
+
+
+/* ==============================
+   LOGO
+================================= */
+
+.logo {
+
+    text-decoration: none;
+
+    color: #F8FAFC;
+
+    font-weight: 700;
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+    transition: 0.3s ease;
+}
+
+
+.logo span {
+
+    color: #38BDF8;
+}
+
+
+.logo:hover {
+
+    color: #F8FAFC;
+}
+
+
+/* ==============================
+   NAVIGATION LINKS
+================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+
+    margin-left: auto;
+}
+
+
+.nav-links li {
+
+    position: relative;
+}
+
+
+.nav-links a {
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #F8FAFC;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-links a:hover {
+
+    color: #38BDF8;
+}
+
+
+/* Underline animation */
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #38BDF8;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+}
+
+
+/* ==============================
+   SOCIAL LINKS
+================================= */
+
+.nav-socials {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 28px;
+}
+
+
+.nav-socials a {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #94A3B8;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    border-radius: 50%;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-socials a:hover {
+
+    color: #38BDF8;
+
+    background: rgba(56, 189, 248, 0.08);
+
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   MOBILE MENU BUTTON
+================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    color: #F8FAFC;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+    transition: .3s ease;
+}
+
+.menu-toggle:hover {
+
+    color: #38BDF8;
+}

@@ -1,0 +1,822 @@
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* ================= HERO ================= */
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) 340px;
+        column-gap: 35px;
+
+        padding: 30px 0 10px;
+    }
+
+    .hero-image img {
+        width: 340px;
+        height: 340px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.35rem;
+    }
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+        padding: 55px 0;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-card {
+        margin-top: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ================= GENERAL ================= */
+
+    .hero,
+    .about,
+    .experience,
+    .projects,
+    .expertise,
+    .contact {
+        width: 92%;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "visual"
+            "text"
+            "stats";
+
+        row-gap: 30px;
+
+        text-align: center;
+
+        padding: 25px 0 10px;
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-stats-section {
+        order: 3;
+    }
+
+    .hero-image img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        max-width: 700px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    /* ================= STATS ================= */
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-heading {
+        flex-direction: column;
+        gap: 3px;
+        text-align: center;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about {
+        scroll-margin-top: 100px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+        padding: 55px 0;
+    }
+
+    .experience-header {
+        gap: 10px;
+    }
+
+    .experience-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects {
+        scroll-margin-top: 100px;
+    }
+
+    .project-post {
+        flex: 0 0 100%;
+    }
+
+
+    /* ================= EXPERTISE ================= */
+
+    .expertise {
+        scroll-margin-top: 100px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* ================= GENERAL ================= */
+
+    .hero,
+    .about,
+    .experience,
+    .projects,
+    .expertise,
+    .contact {
+        width: 92%;
+    }
+
+
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+
+        width: 92%;
+
+        position: relative;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 10px 0;
+    }
+
+
+    /* Hamburger */
+
+    .menu-toggle {
+
+        display: block;
+
+        z-index: 1001;
+    }
+
+
+    /* Navigation links */
+
+    .nav-links {
+
+        position: absolute;
+
+        top: calc(100% + 10px);
+
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        padding: 12px 0;
+
+        background: #1E293B;
+
+        border: 1px solid rgba(255,255,255,.08);
+
+        border-radius: 12px;
+
+        box-shadow: 0 15px 35px rgba(0,0,0,.3);
+
+        z-index: 1000;
+    }
+
+
+    /* Open menu */
+
+    .nav-links.active {
+
+        display: flex;
+    }
+
+
+    /* Individual links */
+
+    .nav-links a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 11px 15px;
+
+        font-size: .9rem;
+
+        text-decoration: none;
+
+        color: #F8FAFC;
+
+        transition: .25s ease;
+    }
+
+    .nav-links a:hover {
+
+        background: rgba(56,189,248,.08);
+
+        color: #38BDF8;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding: 20px 0 10px;
+
+        row-gap: 25px;
+
+        grid-template-areas:
+            "visual"
+            "text"
+            "stats";
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+
+        border-width: 5px;
+    }
+
+    .greeting {
+        font-size: .95rem;
+
+        margin-bottom: 5px;
+    }
+
+    .hero h1 {
+        font-size: 2.35rem;
+
+        line-height: 1.1;
+
+        margin-bottom: 7px;
+    }
+
+    .hero-title {
+        font-size: 1.55rem;
+
+        line-height: 1.2;
+    }
+
+    .hero-tagline {
+        font-size: 1.15rem;
+
+        line-height: 1.35;
+
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: .88rem;
+
+        line-height: 1.6;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .btn {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 11px 20px;
+    }
+
+
+    /* ================= AT A GLANCE ================= */
+
+    .stats-heading {
+        margin-bottom: 10px;
+    }
+
+    .stats-heading span {
+        font-size: .75rem;
+    }
+
+    .stats-heading p {
+        font-size: .75rem;
+
+        text-align: center;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        min-height: 85px;
+
+        padding: 12px 16px;
+
+        text-align: center;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card p {
+        font-size: .82rem;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about {
+        padding: 30px 0;
+
+        scroll-margin-top: 100px;
+    }
+
+    .about-content h2 {
+        font-size: 1.7rem;
+
+        line-height: 1.3;
+
+        margin-bottom: 16px;
+    }
+
+    .about-content > p {
+        font-size: .88rem;
+
+        line-height: 1.6;
+
+        margin-bottom: 15px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-top: 18px;
+    }
+
+    .highlight {
+        padding: 12px 15px;
+
+        font-size: .82rem;
+    }
+
+    .quote {
+        margin-top: 20px;
+
+        padding: 15px;
+    }
+
+    .quote p {
+        font-size: .85rem;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+        padding: 40px 0;
+
+        scroll-margin-top: 100px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .section-header p {
+        font-size: .88rem;
+    }
+
+    .experience-container {
+        gap: 18px;
+    }
+
+    .experience-card {
+        padding: 16px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+
+        gap: 8px;
+
+        margin-bottom: 12px;
+    }
+
+    .experience-header h3 {
+        font-size: 1.35rem;
+    }
+
+    .experience-header h4 {
+        font-size: .9rem;
+    }
+
+    .experience-date {
+        text-align: left;
+
+        font-size: .8rem;
+    }
+
+    .experience-description {
+        font-size: .85rem;
+
+        line-height: 1.6;
+
+        margin-bottom: 16px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .impact-card {
+        padding: 13px;
+    }
+
+    .impact-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .impact-card p {
+        font-size: .82rem;
+    }
+
+    .leadership-note {
+        padding: 12px 14px;
+
+        font-size: .82rem;
+
+        margin-bottom: 16px;
+    }
+
+    .tech-stack {
+        gap: 7px;
+    }
+
+    .tech-stack span {
+        padding: 6px 11px;
+
+        font-size: .75rem;
+    }
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects {
+        padding: 35px 0 10px;
+
+        scroll-margin-top: 100px;
+    }
+
+    .projects-header {
+        justify-content: center;
+
+        align-items: center;
+
+        margin-bottom: 10px;
+    }
+
+    .projects-header h2 {
+        font-size: .8rem;
+
+        margin-bottom: 8px;
+    }
+
+    .projects-track {
+        gap: 15px;
+
+        padding: 5px 0;
+    }
+
+    .project-post {
+        flex: 0 0 100%;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-category {
+        font-size: .68rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.25rem;
+
+        margin: 6px 0 8px;
+    }
+
+    .project-content p {
+        font-size: .82rem;
+
+        line-height: 1.55;
+
+        margin-bottom: 12px;
+    }
+
+    .project-link {
+        font-size: .85rem;
+    }
+
+    .project-arrow {
+        width: 40px;
+        height: 40px;
+
+        font-size: 1rem;
+    }
+
+    .project-arrow:first-child {
+        transform: translateX(-8px);
+    }
+
+    .project-arrow:last-child {
+        transform: translateX(8px);
+    }
+
+    .project-arrow:first-child:hover {
+        transform: translateX(-8px) translateY(-2px);
+    }
+
+    .project-arrow:last-child:hover {
+        transform: translateX(8px) translateY(-2px);
+    }
+
+
+    /* ================= EXPERTISE ================= */
+
+    .expertise {
+        padding: 25px 0;
+
+        scroll-margin-top: 100px;
+    }
+
+    .expertise .section-header h2 {
+        font-size: 1.7rem;
+
+        line-height: 1.3;
+    }
+
+    .expertise .section-header p {
+        font-size: .85rem;
+
+        line-height: 1.6;
+    }
+
+    .expertise-list {
+        gap: 18px;
+
+        margin-top: 20px;
+    }
+
+    .expertise-group {
+        gap: 6px;
+    }
+
+    .expertise-group h3 {
+        font-size: .82rem;
+    }
+
+    .expertise-pills {
+        gap: 6px;
+    }
+
+    .expertise-pills span {
+        padding: 5px 9px;
+
+        font-size: .75rem;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+        padding: 30px 0;
+
+        scroll-margin-top: 100px;
+    }
+
+    .contact-card {
+        margin-top: 30px;
+
+        padding: 18px;
+
+        border-radius: 16px;
+    }
+
+    .contact-item {
+        gap: 15px;
+
+        padding: 18px 0;
+    }
+
+    .contact-item i {
+        font-size: 1.3rem;
+
+        width: 28px;
+    }
+
+    .contact-item h4 {
+        font-size: .9rem;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: .82rem;
+
+        overflow-wrap: anywhere;
+    }
+
+    .contact-buttons {
+        margin-top: 25px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 12px 22px;
+
+        margin: 25px 0;
+    }
+
+    .footer-links a {
+        font-size: .82rem;
+    }
+
+    .footer-content p {
+        font-size: .8rem;
+
+        margin-top: 15px;
+    }
+
+    .footer-social {
+        gap: 15px;
+
+        margin-bottom: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        width: 94%;
+    }
+
+    .nav-links {
+        gap: 7px 12px;
+    }
+
+    .nav-links a {
+        font-size: .75rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-content h2,
+    .expertise .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+}

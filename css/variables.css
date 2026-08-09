@@ -1,0 +1,39 @@
+:root {
+
+    /* COLORS */
+
+    --bg-primary: #0F172A;
+    --bg-secondary: #1E293B;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    --accent: #38BDF8;
+    --blue: #2563EB;
+
+
+    /* SPACING */
+
+    --section-padding: 80px;
+    --card-padding: 28px;
+    --grid-gap: 40px;
+    --content-gap: 20px;
+
+
+    /* TYPOGRAPHY */
+
+    --heading-xl: 3.2rem;
+    --heading-lg: 2.2rem;
+    --heading-md: 1.5rem;
+
+    --body: 1rem;
+    --small: .92rem;
+
+
+    /* RADIUS */
+
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+}

@@ -1,0 +1,55 @@
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+/* Social icon */
+
+.social-icons a {
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    border: 1px solid #2563EB;
+
+    color: #38BDF8;
+
+    font-size: 1.05rem;
+
+    transition: .35s ease;
+
+}
+
+
+/* Hover */
+
+.social-icons a:hover {
+
+    background: #2563EB;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(37, 99, 235, .35);
+
+}
